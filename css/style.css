@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600;1,900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8ff;
+}
+
+.container {
+  max-width: 960px;
+  display: grid;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.logo img {
+  width: 100px;
+
+}
+.cart img {
+  width: 40px;
+  padding: 5px;
+}
+
+.aside nav{
+    position: fixed;
+}
+.aside nav ul {
+  list-style: none;
+  padding: 5px;
+}
+
+.aside ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: gray;
+}
+.aside ul li a:hover {
+  color: #000;
+  font-weight: bold;
+}
+.second-list ul li a {
+  color: #000;
+  font-weight: bold;
+  padding: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 150px auto;
+  gap: 10px;
+}
+
+.aside {
+  width: 20%;
+}
+
+.template {
+  position: relative;
+}
+
+.template img {
+  width: 100%;
+  padding: 15px;
+}
+
+.template-area {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  padding: 20px;
+  width: auto;
+}
+.template-area h2 {
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 50px;
+  font-weight: 200;
+  line-height: 20px;
+}
+
+.template-area h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+.template-area button {
+  background: #000;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 30px;
+}
+.card {
+  width: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card:hover{
+  transform: scale(1.2);
+}
+
+.card img {
+  max-width: 100%;
+  height: 200px;
+}
+.card span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.cards h2 {
+  display: block;
+}
+
+@media (max-width: 600px) {
+
+ 
+  .template img {
+    width: 100vw;
+    padding: 2px;
+  }
+  .template-area {
+    width: 300px;
+  }
+  .template-area h2 {
+    font-size: 26px;
+  }
+  .template-area h3 {
+    font-size: 20px;
+  }
+  aside{
+    display: none;
+  }
+  h2{
+    text-align: center;
+  }
+}
+.subscribe{
+    background-color: #000;
+    color: #FFF;
+    padding: 20px;
+    margin-top: 20px;
+  
+    
+
+}
+.subscribe h2{
+   letter-spacing: 3px;
+   font-weight: 300;
+}
+.subscribe input{
+    display: block;
+    width: 50%;
+    margin: 5px 0px;
+}
+
+.subscribe button{
+    background-color: red;
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+}
+footer{
+  margin-left: 160px;
+  padding: 20px;
+
+}
+
+.column{
+    background-color: rgb(238, 235, 235);
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 2px;
+}
+
+.form{
+    width: 200px;
+    text-align: center;
+
+    padding: 5px;
+}
+.form p{
+    font-size: 12px;
+}
+.form input{
+    padding: 2px;
+    margin: 5px;
+    width: 100%;
+}
+.form button{
+    background: #000000;
+    border: 0;
+    color: #fff;
+    padding: 6px;
+    width: 100%;
+    margin: 5px;
+}
+.about{
+    width: 200px;
+   text-align: center;
+
+
+}
+.about h4{
+    text-align: center;
+    margin-left: 24px;
+}
+.about ul{
+    list-style: none;
+}
+.about ul li a{
+    color: #000;
+    font-size: 12px;
+    padding: 2px;
+}
+.design {
+
+    text-align: center;
+    font-size: 14px;
+}
+.design .material-icons{
+font-size: 18px;
+padding: 0;
+}
+
+
+.powered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(238, 235, 235);
+    color: #000;
+}
+.powered img{
+    width: 80px;
+    margin-left: 10px;
+}
+
+
+
+@media(max-width:600px){
+  .cards{
+    grid-template-columns: 1fr 1fr;
+    width: 380px;
+    margin-left: 16px;
+  }
+  footer{
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+  .subscribe{
+    width: 100vw;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .column{
+    grid-template-columns: 1fr;
+   
+  }
+
+  .card{
+    box-shadow: none
+  }
+  .form{
+    margin: 0 auto;
+  }
+  .about{
+    margin: 0 auto;
+    
+   }
+   .about h4{
+     margin: 0 5px;
+   }
+   .about ul{
+     padding: 0;
+   }
+  .design{
+    margin: 0 auto;
+  }
+  
+}
